@@ -1,0 +1,27 @@
+body {
+    display: none;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+}
+.table thead th, .table tfoot th {
+    vertical-align: middle;
+}
+.modal {
+    z-index: 999;
+}
+.modal-backdrop {
+    z-index: 980;
+}
+/* dz-message */
+.dz-message {
+    font-size: 1rem!important;
+}
+.dz-message::before {
+    font-size: 40px!important;
+    width: 40px!important;
+    height: 40px!important;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    margin-top: 7px;
+    margin-left: 3px;
+}
