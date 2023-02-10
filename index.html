@@ -1,0 +1,1179 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home - </title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/conference/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/conference/bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/conference/assets/css/main.css">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+<link rel="shortcut icon" href="https://technext.github.io/conference/assets/images/logo.png" type="image/x-icon">
+        <!-- twitter分享 -->
+        <meta property="twitter:url" content="/index.html">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="null">
+
+        <!-- facebook分享 -->
+        <meta property="og:url" content="/index.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="null">
+
+        <script>
+            function shareFacebook() {
+                var _shareUrl = 'https://facebook.com/sharer/sharer.php?'; //真实的appkey，必选参数
+                _shareUrl += '&u=' + encodeURIComponent(location.href); //参数url设置分享的内容链接|默认当前页location，可选参数
+                window.open(_shareUrl, '_blank');
+            }
+            function shareTwitter() {
+                var _shareUrl = 'https://twitter.com/intent/tweet/?'; //真实的appkey，必选参数
+                _shareUrl += '&text=' + encodeURIComponent(''); 
+                _shareUrl += '&url=' + encodeURIComponent(location.href); 
+                window.open(_shareUrl, '_blank');
+            }
+            function sharePinterest() {
+                var _shareUrl = 'https://pinterest.com/pin/create/button/?'; //真实的appkey，必选参数
+                _shareUrl += '&media=' + encodeURIComponent('null'); 
+                _shareUrl += '&description=' + encodeURIComponent(''); 
+                _shareUrl += '&url=' + encodeURIComponent(location.href); 
+                window.open(_shareUrl, '_blank');
+            }
+
+            //分享到新浪微博   
+            function shareToSinaWB() {
+                var _shareUrl = 'https://service.weibo.com/share/share.php?'; //真实的appkey，必选参数
+                _shareUrl += '&url=' + encodeURIComponent(document.location); //参数url设置分享的内容链接|默认当前页location，可选参数
+                _shareUrl += '&title=' + encodeURIComponent(document.title); //参数title设置分享的标题|默认当前页标题，可选参数
+                _shareUrl += '&source=' + encodeURIComponent('');
+                _shareUrl += '&sourceUrl=' + encodeURIComponent('');
+                _shareUrl += '&content=' + 'utf-8'; //参数content设置页面编码gb2312|utf-8，可选参数
+                _shareUrl += '&pic=' + encodeURIComponent(''); //参数pic设置图片链接|默认为空，可选参数
+                window.open(_shareUrl, '_blank');
+            }
+        </script>
+    
+            <meta charset="UTF-8">
+            <script>
+                var docCookies = {
+    getItem: function (sKey) {
+        return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[-.+*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+    },
+    setItem: function (sKey, sValue, vEnd, sPath, sDomain, bSecure) {
+        if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) { return false; }
+        var sExpires = "";
+        if (vEnd) {
+            switch (vEnd.constructor) {
+            case Number:
+                sExpires = vEnd === Infinity ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; max-age=" + vEnd;
+                break;
+            case String:
+                sExpires = "; expires=" + vEnd;
+                break;
+            case Date:
+                sExpires = "; expires=" + vEnd.toUTCString();
+                break;
+            }
+        }
+        document.cookie = encodeURIComponent(sKey) + "=" + encodeURIComponent(sValue) + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "") + (bSecure ? "; secure" : "");
+        return true;
+        },
+        removeItem: function (sKey, sPath, sDomain) {
+        if (!sKey || !this.hasItem(sKey)) { return false; }
+        document.cookie = encodeURIComponent(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + ( sDomain ? "; domain=" + sDomain : "") + ( sPath ? "; path=" + sPath : "");
+        return true;
+    },
+    hasItem: function (sKey) {
+        return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[-.+*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
+    },
+    keys: /* optional method: you can safely remove it! */ function () {
+        var aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
+        for (var nIdx = 0; nIdx < aKeys.length; nIdx++) { aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]); }
+        return aKeys;
+    }
+};
+                if (location.hostname === 'tianq5905.temp.cn2.caihongjianzhan.com') {
+                    if (!docCookies.getItem('login_name')) {
+                        location.href = 'http://tianq5905.cn2.caihongjianzhan.com'
+                    }
+                }
+            </script>
+        </head>
+
+<body data-spy="scroll" data-target="#site-nav">
+
+
+
+
+
+
+
+
+
+
+
+    
+        <div component="header.html">
+            <link rel="stylesheet" href="/css/tailwind.css">
+<link rel="stylesheet" type="text/css" href="/css/customer.css">
+<script type="text/javascript" src="/js/jiaogeiwocommon.js"></script>
+<script src="//cdn.xuansiwei.com/common/lib/alpinejs/3.4.2/components-v2.js"></script>
+<script src="//cdn.xuansiwei.com/common/lib/alpinejs/3.9.6/intersect.min.js" defer=""></script>
+<script src="//cdn.xuansiwei.com/common/lib/alpinejs/3.10.2/alpinejs.min.js" defer=""></script>
+<style>
+    [x-cloak] {
+        display: none !important;
+    }
+</style>
+<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- logo -->
+            <div class="site-branding">
+                <a class="logo" href="/index.html">
+                    <!-- logo image  -->
+                    <img src="https://technext.github.io/conference/assets/images/logo.png" alt="Logo" style="background-image: url('//cdn.xuansiwei.com/tianq5905/1675288394757/sicc_huaban 1.jpg?x-oss-process=style/small')" loading="lazy">
+
+                    S
+                </a>
+                <div><br></div>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+
+
+
+
+
+
+
+
+
+
+            
+        <div component="menus.js" data="{'color': '', 'skin': '', 'is_fixed_top': true, 'is_transparent': false, 'align': 'around'}">
+            
+        
+        <div component="config.js">
+            
+        <style>
+            :root {
+                --color-primary: #000;
+                --color-primary-rgb: 0 0 0;
+                --color-primary-rgb-50: 64 64 64;
+                --color-primary-rgb-100: 51 51 51;
+                --color-primary-rgb-200: 38 38 38;
+                --color-primary-rgb-300: 26 26 26;
+                --color-primary-rgb-400: 13 13 13;
+                --color-primary-rgb-500: 0 0 0;
+                --color-primary-rgb-600: 0 0 0;
+                --color-primary-rgb-700: 0 0 0;
+                --color-primary-rgb-800: 0 0 0;
+                --color-primary-rgb-900: 0 0 0;
+            }
+            .cn {display: none!important;}
+            
+        </style>
+        
+            <script src="/jiaogeiwo/js/front.js"></script>
+            <script src="/member/js/jiaogeiwo_vars.js"></script>
+        <script>
+            if (!localStorage.getItem('i18nextLng')) {
+                localStorage.setItem('i18nextLng', 'en');
+            }
+            
+            if (!localStorage.getItem('currency')) {
+                localStorage.setItem('currency', 'USD');
+                localStorage.setItem('currency_ratio', 1);
+            }
+        </script>
+    
+        </div>
+    
+        <ul class="nav navbar-nav navbar-right">
+            
+                    <li class="active"><a data-scroll="" href="/index.html">Home</a></li>
+                
+
+                    <li class=""><a data-scroll="" href="#about">About</a></li>
+                
+
+                    <li class=""><a data-scroll="" href="#speakers">Speakers</a></li>
+                
+
+                    <li class=""><a data-scroll="" href="#schedule">Schedule</a></li>
+                
+
+                    <li class=""><a data-scroll="" href="#partner">Partner</a></li>
+                
+
+                    <li class=""><a data-scroll="" href="#faq">FAQ</a></li>
+                
+
+                    <li class=""><a data-scroll="" href="#photos">Photos</a></li>
+                
+            <!-- 会员 -->
+            <li class="navigation-item">
+                <a class="navigation-link" href="/member/">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><circle stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#fff" r="8" cy="12" cx="24" data-follow-stroke="#fff"></circle><path stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#fff" d="M42 44c0-9.941-8.059-18-18-18S6 34.059 6 44" data-follow-stroke="#fff"></path></svg>
+                    <!--<span class="hide-on-landscape"><span class="cn">登陆</span><span class="en">Login</span></span>-->
+                </a>
+            </li>
+        </ul>
+        <div style="height: var(--main-margin-top);"></div>
+        <script src="//cdn.xuansiwei.com/common/lib/navx/js/navigation.min.js"></script>
+        <script>
+            var navigation = new Navigation(document.querySelector(".navigation"));
+
+            
+        </script>
+    
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div><!-- /.container -->
+</nav>
+<header id="site-header" class="site-header valign-center" style="background-image: url('//cdn.xuansiwei.com/tianq5905/1675301143532/header.jpg?x-oss-process=style/small')">
+    <div class="intro">
+
+        <h2>19-20th Oct / Houston, Texas</h2>
+
+        <h1>SynthX Annual Meeting</h1>
+
+        <p> Synthetic Innovations towards a Cure for Cancer (SICC)</p>
+
+        <a class="btn btn-white" data-scroll="" href="#registration">Register Now</a>
+
+    </div>
+</header>
+<script src="//cdn.xuansiwei.com/common/lib/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    if (isIframe()) {
+            $(window).load(function() {
+                setTimeout(function() {
+                    $(".site-header").css('min-height','15vh');
+                }, 0)
+            })
+        }
+</script>
+
+<!--
+<link rel="stylesheet" href="//cdn.xuansiwei.com/common/lib/font-awesome/4.7.0/font-awesome.min.css">
+<script src="//cdn.xuansiwei.com/common/lib/jquery/jquery-1.11.3.min.js"></script>
+<dynamic-load component="menus.js" data="{'color': '', 'skin': 'mini-circle', 'is_fixed_top': true, 'is_transparent': false, 'align': 'around'}"></dynamic-load>
+-->
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About Us</h3>
+
+                    <p>Rice University and Texas Medical Center (TMC) are in a unique position to deliver the key fundamental
+innovations that will drive the discovery of next-generation cancer medicine. To catalyze the generation
+of innovative drugs and technologies that can improve the diagnostics and therapeutics of human diseases,
+exploration of the fundamental aspects of underlying chemical, biological and physical processes and connecting
+them better for therapy are important. With strong foundations in theoretical biophysics, molecular design,
+nanotechnology, biological sciences, and engineering, Rice is able to deliver the evolution of therapeutics at the
+atomic, molecular, and nanometer levels, which is not currently available to the adjacent Texas Medical Center.
+To translate our knowledge for cancer, Baylor College of Medicine, Texas Children’s Hospital are committed to
+the study of breast health and the development of cancer treatment. Rice and TMC can push the boundaries of
+clinical research across an extensive network of different institutions and pioneer effective health policy solutions
+to address the complex cancer problems of today.</p>
+                    <div><img src="https://media.beam.usnews.com/23/6fccdd0d12e7f24f806cefe3c14a5a/1._Rice_TMC.jpg" style="max-width:100%;" loading="lazy"><br></div>
+
+                    <figure>
+
+                    </figure>
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">What is Our Goal?</h3>
+
+                    <p>Catalyze the generation of innovative drugs and technologies. SICC can improve the diagnostics and
+therapeutics of human diseases by exploring the fundamental aspects of organic chemistry, chemical biology,
+and nanomaterial synthesis, and connecting them better to investigated health phenomena.
+Foster collaborations between Rice and TMC. With strong foundations in organic chemistry, chemical biology,
+nanotechnology, biological sciences, and engineering, Rice is in a unique position to deliver the key fundamental
+innovations that will drive the biomedical industry forward. SICC is able to deliver the evolution of synthetic
+therapeutics at the atomic, molecular, and nanometer levels to colleagues at TMC, which is not currently
+available to the adjacent TMC. This effort will provide opportunities for both Rice and TMC researchers to apply
+for high-level NIH/DoD/CPRIT/NSF research and training grants, especially the multi-PI grants and center grants</p>
+
+                    <ul class="list-arrow-right">
+
+                        <li>Learn from the best Asian Social Media Experts &amp; Case Studies</li>
+                        <li>Have dedicated 2-to-1 meetings with the experts</li>
+                        <li>Reach more consumers for less by learning new digital media skills</li>
+                        <li>Save money when spending in online advertising</li>
+                        <div><img src="//cdn.xuansiwei.com/tianq5905/1673842729877/5-must-do-things-near-texas-medical-center.jpg" style="max-width:100%;" loading="lazy"><br></div>
+
+                    </ul>
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2023<br>Oct. 22-23</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>TEXAS<br>USA</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>150<br>Tickets</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-speakerphone"></i>
+                    <h3>06<br>Speakers</h3>
+
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h3 class="section-title">Speakers</h3>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/speakers/speaker-1.jpg" loading="lazy">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/speakers/speaker-2.jpg" loading="lazy">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/speakers/speaker-3.jpg" loading="lazy">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/speakers/speaker-4.jpg" loading="lazy">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/speakers/speaker-5.jpg" loading="lazy">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/speakers/speaker-6.jpg" loading="lazy">
+                        </figure>
+                        <h4>Jhon Smith</h4>
+                        <p>CEO of Peren</p>
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="registration" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Registration &amp; Pricing</h3>
+                </div>
+            </div>
+
+            
+        <div component="form.js" data="{'id': 'registration-form', 'post_url': '//yun-api.sungdell.com/customer-form?d=tianq5905.cn2.caihongjianzhan.com&amp;aid=3922&amp;fid=3685', 'email': '', 'fields': [
+                {'type': 'text', 'name': 'fname', 'label': 'First Name', 'required': true},
+                {'type': 'text', 'name': 'lname', 'label': 'Last Name', 'required': true},
+                {'type': 'text', 'name': 'email', 'label': 'Email', 'required': true},
+                {'type': 'text', 'name': 'cell', 'label': 'Phone', 'required': true},
+                {'type': 'text', 'name': 'address', 'label': 'Address', 'required': true},
+                {'type': 'text', 'name': 'zip', 'label': 'Zip Code', 'required': true},
+                {'type': 'text', 'name': 'city', 'label': 'city', 'required': true},
+                {'type': 'text', 'name': 'program', 'label': 'program', 'required': true}
+            ]}">
+            
+    <form id="registration-form" method="post" onsubmit="return">
+        <div class="row">
+            <div class="col-md-12" id="registration-msg" style="display:none;">
+                <div class="alert"></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required="">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required="">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="email" required="">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required="">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Address" id="address" name="address" required="">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required="">
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control" name="city" id="city" required="">
+                        <option readonly="">City</option>
+                        <option>City Name 1</option>
+                        <option>City Name 2</option>
+                        <option>City Name 3</option>
+                        <option>City Name 4</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control" name="program" id="program" required="">
+                        <option readonly="">Select Your Program</option>
+                        <option>Program Name 1</option>
+                        <option>Program Name 2</option>
+                        <option>Program Name 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt20">
+            <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
+        </div>
+    </form>
+        <!-- 上传附件
+        <script>
+            function uploadFile(file) {
+                const fd = new FormData();
+                fd.append('file', file);
+                return fetch('//yun-api.sungdell.com/upload-file?siteName=tianq5905', {
+                    mode: 'cors',
+                    method: 'POST',
+                    body: fd,
+                }).then(res => {
+                    return res.json();
+                }).then(res => {
+                    console.log('res is',res);
+                    return res.url;
+                })
+            }
+        </script>
+        -->
+        <!-- 添加短信验证码
+        <script src="/jiaogeiwo/js/front.js"></script>
+        <script src="/member/js/jiaogeiwo_vars.js"></script>
+        <script>
+            const jiaogeiwo_sms = {
+                requestId: null,
+                init: function({phoneSelector, phoneCaptchaBtnSelector}) {
+                    function daoshu() {
+                        var count = 60;
+                        jQuery(phoneCaptchaBtnSelector).text('短信验证' + '(' + count + ')');
+                        var intervalId = setInterval(function() {
+                            if (count > 0) {
+                                jQuery(phoneCaptchaBtnSelector).text('短信验证' + '(' + count + ')');
+                                count--;
+                            } else {
+                                jQuery(phoneCaptchaBtnSelector).text('重新获取');
+                                jQuery(phoneCaptchaBtnSelector).removeClass('disabled');
+                                clearInterval(intervalId); // 停止倒计时
+                            }
+                        }, 1000);
+                    }
+                    jQuery(phoneCaptchaBtnSelector).click(function() {
+                        const phone = jQuery(phoneSelector).val()
+                        if (!phone) {
+                            alert('请先填写手机号码');
+                            return;
+                        }
+                        if (!jQuery(this).hasClass('disabled')) {
+                            jQuery(this).addClass('disabled');
+                            jiaogeiwo.http.get('sms-send?phone=' + phone)
+                                .then((data) => {
+                                    console.info(data);
+                                    if (data.status === 0) {
+                                        jiaogeiwo_sms.requestId = data.requestId;
+                                        console.info('验证码发送成功，开始倒数');
+                                        daoshu();
+                                    } else {
+                                        alert(data.message);
+                                        jQuery(phoneCaptchaBtnSelector).removeClass('disabled');
+                                    }
+                                })
+                                .catch((e) => {
+                                    console.info(e);
+                                    jQuery(phoneCaptchaBtnSelector).removeClass('disabled');
+                                })
+                        }
+                    })
+                }
+            }
+            jiaogeiwo_sms.init({phoneSelector: '#registration-form input[name="mobile"]', phoneCaptchaBtnSelector: '#registration-form .getCode'});
+        </script>
+        -->
+        <script type="text/javascript">
+            if (false) {
+                alert('请先设置接口链接！');
+            }
+            jQuery(function(){
+                function handlerSubmit() {
+                    
+                            if (!jQuery("#registration-form [name=fname]").val()) {
+                                alert('First Name not empty')
+                                return false ;
+                            }
+                        
+
+                            if (!jQuery("#registration-form [name=lname]").val()) {
+                                alert('Last Name not empty')
+                                return false ;
+                            }
+                        
+
+                            if (!jQuery("#registration-form [name=email]").val()) {
+                                alert('Email not empty')
+                                return false ;
+                            }
+                        
+
+                            if (!jQuery("#registration-form [name=cell]").val()) {
+                                alert('Phone not empty')
+                                return false ;
+                            }
+                        
+
+                            if (!jQuery("#registration-form [name=address]").val()) {
+                                alert('Address not empty')
+                                return false ;
+                            }
+                        
+
+                            if (!jQuery("#registration-form [name=zip]").val()) {
+                                alert('Zip Code not empty')
+                                return false ;
+                            }
+                        
+
+                            if (!jQuery("#registration-form [name=city]").val()) {
+                                alert('city not empty')
+                                return false ;
+                            }
+                        
+
+                            if (!jQuery("#registration-form [name=program]").val()) {
+                                alert('program not empty')
+                                return false ;
+                            }
+                        
+
+                    // if (verifyCode_registration-form.toLowerCase() !== jQuery('#captcha_input_registration-form').val().toLowerCase()) {
+                    //     alert('Error in verification code');
+                    //     return false;
+                    // }
+
+                    // if (!jQuery('#registration-form input[name="mobile"]').val()) {
+                    //     alert('Cell phone verification code can not be empty')
+                    //     return false ;
+                    // }
+
+                    const fields = [{"type":"text","name":"fname","label":"First Name","required":true},{"type":"text","name":"lname","label":"Last Name","required":true},{"type":"text","name":"email","label":"Email","required":true},{"type":"text","name":"cell","label":"Phone","required":true},{"type":"text","name":"address","label":"Address","required":true},{"type":"text","name":"zip","label":"Zip Code","required":true},{"type":"text","name":"city","label":"city","required":true},{"type":"text","name":"program","label":"program","required":true}];
+                    var values = fields.map(item => {
+                        return {
+                            name: item.name,
+                            label: item.label,
+                            value: jQuery("#registration-form [name='" + item.name + "']").val()
+                        }
+                    })
+                    console.info(values);
+                    Promise.resolve()
+                        .then(() => {
+                            // 短信验证码验证
+                            // return jiaogeiwo.http.get('sms-check?requestId=' + jiaogeiwo_sms.requestId + '&code=' + jQuery('#registration-form .code').val())
+                            //     .then((data) => {
+                            //         if (data.status !== 0) {
+                            //             return Promise.reject('短信验证码错误');
+                            //         }
+                            //         return Promise.resolve();
+                            //     })
+                        })
+                        .then(() => {
+                            // 上传附件
+                            // const file = jQuery("[name='file']")[0].files[0];
+                            // if (file) {
+                            //     return uploadFile(file)
+                            //         .then(url => {
+                            //             values.push({
+                            //                 name: 'file',
+                            //                 label: '附件',
+                            //                 value: url
+                            //             })
+                            //         })
+                            // }
+                            // return Promise.resolve();
+                        })
+                        .then(() => {
+                            jQuery.ajax({
+                                url: "//yun-api.sungdell.com/customer-form?d=tianq5905.cn2.caihongjianzhan.com&aid=3922&fid=3685",
+                                type: 'POST',
+                                data: JSON.stringify(values),
+                                dataType: 'json',
+                                contentType: 'application/json',
+                                success: function (data, status, xhr) {
+                                    if (data && data.status === 0) {
+                                        const email = data.data.email || '4008888888@qq.com';
+                                        if (email) {
+                                            var emailObj = {
+                                                body: {
+                                                    greeting: '您好',
+                                                    signature: '交给我建站',
+                                                    name,
+                                                    intro: '这是您的后台表单数据',
+                                                    table: {
+                                                        data: values.map(item=>({name: item.label, value: item.value}))
+                                                    },
+                                                    action: {
+                                                        instructions: '您可以登录你的后台查看全部数据:',
+                                                        button: {
+                                                            color: '#3869D4',
+                                                            text: '点击进入',
+                                                            link: 'http://tianq5905.cn2.caihongjianzhan.com'
+                                                        }
+                                                    },
+                                                    outro: '感谢您的使用，您遇到任务问题都可以联系我们的售后'
+                                                }
+                                            }
+                                            jQuery.post('//yun-api.sungdell.com/send-email?email=' + email, "subject=表单数据&emailObj=" + JSON.stringify(emailObj), function (data) {
+                                                console.info('发送邮件成功');
+                                                if (data.status === 0) {
+                                                    alert("Submit Successfully!");
+                                                    location.reload();
+                                                }
+                                                console.info('失败', data)
+                                            })
+                                        } else {
+                                            alert("Submit Successfully!");
+                                            location.reload();
+                                        }
+                                    } else {
+                                        alert(data.message);
+                                    }
+                                },
+                                error: function (xhr, error, exception) {
+                                    alert(exception.toString());
+                                },
+                                beforeSend:function() {
+                                    jQuery("#registration-form [type=submit]").off('click');
+                                },
+                                complete: function (data) {
+                                    jQuery("#registration-form [type=submit]").on('click', handlerSubmit);
+                                }
+                            });
+                        })
+                        .catch(e => {
+                            alert(e);
+                        })
+                }
+                jQuery("#registration-form [type=submit]").on('click', handlerSubmit);
+            })
+        </script>
+    
+        </div>
+    
+
+        </div>
+    </section>
+
+    <section id="contribution" class="section bg-image-2 contribution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
+
+                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you submit your best work.</p>
+
+                    <a class="btn btn-white" href="#">Submit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event Schedule</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Welcome and intro</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Tips and share</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>View from the top</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partner" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event Partner</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-1" style="background-image: url('//cdn.xuansiwei.com/tianq5905/1675286940631/Rice_Logo_425_Gray.jpg?x-oss-process=style/small')"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-2" style="background-image: url('//cdn.xuansiwei.com/tianq5905/1675287415036/md anderson logo.jpg?x-oss-process=style/small')"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-3" style="background-image: url('//cdn.xuansiwei.com/tianq5905/1675287515202/Baylor_College_of_Medicine_Logo.png?x-oss-process=style/png_small')"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-4" style="background-image: url('//cdn.xuansiwei.com/tianq5905/1675287571715/TCH_Logo_Color.jpg?x-oss-process=style/small')"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-5"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-6"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-7"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-8"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event FAQs</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> What is the price of the ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <h3>Hello</h3>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> What is included in my ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Office address ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> How should I dress ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> I have specific questions that are not addressed here. Who can help me ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Photos</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">
+
+                        <li class="grid-item grid-item-sm-6">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-1.jpg" loading="lazy">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-2.jpg" loading="lazy">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-3.jpg" loading="lazy">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-5.jpg" loading="lazy">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-6.jpg" loading="lazy">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-7.jpg" loading="lazy">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-8.jpg" loading="lazy">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-2.jpg" loading="lazy">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="https://technext.github.io/conference/assets/images/photos/photos-3.jpg" loading="lazy">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <div>Ting Tsung and Wei Fong Chao Foundation Conference Center<br></div>
+                    <address>
+
+                        <div></div>
+                        <div></div>
+                    </address>
+                </div>
+                <div class="col-sm-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.50013548559!2d-78.9870674333782!3d40.76030630398601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sbd!4v1436299406518" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    
+        <div component="footer.html">
+            <script type="text/javascript" src="/js/customer.js"></script>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="site-info">Designed and <br> Developed by <a href="#">Technext Limited</a></p>
+                <ul class="social-block">
+                    <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                    <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                    <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                    <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--
+<dynamic-load component="footer.js"></dynamic-load>
+-->
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script -->
+    <script src="/conference/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/conference/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/conference/bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="/conference/assets/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
